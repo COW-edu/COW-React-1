@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+}
+
+#todo-input {
+  background-color: rgba(255, 255, 255, 0);
+  width: 300px;
+  color: white;
+  border-width: 0px 0px 5px 0px;
+  border-color: white;
+  outline: none;
+  font-size: 30px;
+}
+
+#add-button {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+#add-button:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#select {
+  outline: none;
+  width: 250px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  font-size: 20px;
+}
+
+#select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+  font-size: 30px;
+  color: white;
+}
+
+li span {
+  display: inline-block;
+  width: 200px;
+  padding-left: 20px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  font-size: 28px;
+  color: white;
+}
