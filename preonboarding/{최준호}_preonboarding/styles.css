@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+button {
+    cursor: pointer;
+}
+button :hover{
+    transition: 1ms;
+}
+.input-container{
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-input{
+    width: 88%;
+    height: 100%;
+    margin-right: 2%;
+    font-size: 18px;
+}
+#add-button{
+    font-size: 15px;
+    height: 100%;  
+}
+
+#todo-list{
+    display: flex;
+    width: 88%;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-list li {
+    display: flex;
+    font-size: 20px;
+    width: inherit;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+}
+    
+#buttonContainer button{
+    font-size: 15px;
+    background-color: beige;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+}
+
+#filterButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#filterButtonContainer button{
+    font-size: 18px;
+    color: white;
+    background-color: gray;
+    border: none;
+    margin: 1% 2%;   
+}
+
