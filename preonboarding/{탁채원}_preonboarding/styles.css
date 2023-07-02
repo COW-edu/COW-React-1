@@ -1,0 +1,107 @@
+body {
+  background-color: #819ff7;
+}
+.whole-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.whole-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  background-color: #edeef0;
+  border-radius: 40px;
+}
+
+#todo-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+#add-button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #ff5945;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none; /* */
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+/*The transform: translateY(-50%); property is used to vertically center the unchecked icon image within the li element.
+
+By default, the top property sets the top edge of the element to the specified value. However, when you want to vertically center an element inside its parent, you can use the transform property with the translateY() function.
+
+In this case, translateY(-50%) is used to move the unchecked icon image up by 50% of its own height. By doing so, the top center point of the image will align with the vertical center of the li element.
+
+This technique is commonly used for vertically centering elements when the height of the element is known or fixed. It ensures that the element is always centered regardless of its height. */
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: #edeef0;
+}
