@@ -25,11 +25,12 @@ function addText() {
       list.textContent = todoInputValue;
       list.className = `dolist notdone`;
       removeButton.className = `removeButton`;
-      checkbutton.className = `checkbutton`;
+      checkbutton.className = `checkbutton doneButton`;
       buttoncontainer.appendChild(checkbutton);
       buttoncontainer.appendChild(removeButton);
       list.appendChild(buttoncontainer);
       
+
       //리스트에 저장하기
       todoArray.push(list);
       notdoneArray.push(list);
@@ -80,10 +81,9 @@ function checkTodo(index) {
   //완 -> 미완 변경
   if(indexTodo.className === "dolist done"){
     indexTodo.className = "dolist notdone";
-    indexTodo.style.textDecorationLine = "none";
-    indexTodo.style.color = "black";
     indexTodo.querySelector(`.checkbutton`).textContent = "완료!";
-    
+    indexTodo.querySelector(`.checkbutton`).className = "checkbutton doneButton"
+
     let doneIndex = doneArray.indexOf(indexTodo);
     if(doneIndex !== -1) {
       doneArray.splice(doneIndex, 1);
@@ -93,10 +93,8 @@ function checkTodo(index) {
   //미완 -> 완 변경
   else if (indexTodo.className === "dolist notdone"){
     indexTodo.className = "dolist done";
-    indexTodo.style.textDecorationLine = "line-through";
-    indexTodo.style.color = "red";
     indexTodo.querySelector(`.checkbutton`).textContent = "안함!";
-    indexTodo.querySelector(`.checkbutton`).className = "checkbutton doneButton"
+    indexTodo.querySelector(`.checkbutton`).className = "checkbutton notdoneButton"
     let notdoneIndex = notdoneArray.indexOf(indexTodo);
     if(notdoneIndex !== -1) {
       notdoneArray.splice(notdoneIndex, 1);
@@ -118,15 +116,20 @@ function addFilter() {
     allItem.textContent = "전체 보기"
     DoneFilter.textContent = "한 것만 보기"
     NotBeDoneFilter.textContent = "안한거 보기"
+    const ClearallButton = document.createElement(`button`);
+    ClearallButton.textContent = "전부 지우기";
     //버튼들 부모 연결하기
     FilterContainer.appendChild(allItem);
     FilterContainer.appendChild(DoneFilter);
     FilterContainer.appendChild(NotBeDoneFilter);
+    FilterContainer.appendChild(ClearallButton);
     $todoList.appendChild(FilterContainer);
     //버튼 클릭하는 이벤트 생성
+
     DoneFilter.addEventListener(`click`, seeDone);
     allItem.addEventListener(`click`,seeAll);
     NotBeDoneFilter.addEventListener(`click`,seeNotDone);
+    ClearallButton.addEventListener(`click`, clearAll);
   }
 }
 //filter별로 다른것들 보이게 
@@ -156,5 +159,12 @@ function seeNotDone() {
     $todoList.appendChild(notdoneArray[i]);
   }
 }
-
+function clearAll() {
+  doneArray = []
+  notdoneArray = []
+  todoArray = []
+  while($todoList.children[1]) {
+    $todoList.children[1].remove();
+  }
+}
 addText();
