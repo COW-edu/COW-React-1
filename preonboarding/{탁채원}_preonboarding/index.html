@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="whole-wrapper">
+      <div class="whole-container">
+        <h1>Todo List</h1>
+        <div class="input-container">
+          <input type="text" id="todo-input" placeholder="할 일을 입력하세요" />
+          <button id="add-button" type="button" onClick="addTask()">
+            추가
+          </button>
+          <!--type 속성을 생략하면 submit 버튼으로 동작하게 되어서, js의 이벤트로 동작하기 위해 속성을 추가한다-->
+        </div>
+        <ul id="todo-list">
+          <!-- <li class="checked">task 1</li>
+          <li>task 2</li>
+          <li>task 3</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
