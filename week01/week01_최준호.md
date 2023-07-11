@@ -47,7 +47,7 @@
     6. 자바스크립트 해석기 : 자바스크립트 코드를 해석하고 실행
     7. 자료 저장소 : 자료를 저장하는 계층, 쿠키 저장처럼 모든 종류의 자원을 하드디스크에 저장할 필요가 있다.
 
-[브라우저 기본 구조](https://github.com/COW-edu/COW-React-1/assets/127816010/4db86757-c797-40d7-9ed1-c386d0437a10)
+![브라우저 기본 구조](https://github.com/COW-edu/COW-React-1/assets/127816010/4db86757-c797-40d7-9ed1-c386d0437a10)
 
 브라우저 기본 구조
 
@@ -60,14 +60,14 @@
 - 최적화 시 렌더링 성능을 향상시킨다.
 - DOM트리 구축 → CSSOM트리 구축 → Render트리 구축 → 레이아웃 생성 → 페인팅 순서로 진행된다.
 
-[https://github.com/COW-edu/COW-23-Basic/assets/127816010/d03976ec-5a10-4df4-b895-8dc2a2101cf0](https://github.com/COW-edu/COW-23-Basic/assets/127816010/d03976ec-5a10-4df4-b895-8dc2a2101cf0)
+![https://github.com/COW-edu/COW-23-Basic/assets/127816010/d03976ec-5a10-4df4-b895-8dc2a2101cf0](https://github.com/COW-edu/COW-23-Basic/assets/127816010/d03976ec-5a10-4df4-b895-8dc2a2101cf0)
 
 ### DOM트리 구축
 
 - HTML의 요청 → 각각의 요소와 텍스트에 대한 노드 생성 → 중첩된 요소는 자식 노드로 표현 & 각 노드에 해당 요소 특성 포함된다.
 - 노드의 서열에 따라 DOM트리에 연결된다.
 
-[DOM TREE 예시](https://github.com/COW-edu/COW-23-Basic/assets/127816010/e82c29c7-21b8-46ee-be1a-1e92128a3b4d)
+![DOM TREE 예시](https://github.com/COW-edu/COW-23-Basic/assets/127816010/e82c29c7-21b8-46ee-be1a-1e92128a3b4d)
 
 DOM TREE 예시
 
@@ -84,7 +84,7 @@ DOM TREE 예시
     
 - JS에서 스타일 정보 요청 시 CSS가 파싱되지 않는다면 스크립트 에러 발생한다.
 
-[CSSOM TREE 예시](https://github.com/COW-edu/COW-23-Basic/assets/127816010/98438c70-3c86-4909-8e5a-1483544d5d7b)
+![CSSOM TREE 예시](https://github.com/COW-edu/COW-23-Basic/assets/127816010/98438c70-3c86-4909-8e5a-1483544d5d7b)
 
 CSSOM TREE 예시
 
@@ -162,5 +162,5 @@ CSSOM TREE 예시
 - CSS규칙 최소화 및 사용되지 않는 CSS규칙 삭제
 
 기타 등등… 
-
-[](https://lists.w3.org/Archives/Public/public-html-ig-ko/2011Sep/att-0031/Reflow_____________________________Tip.pdf)
+- 참고자료 ->
+https://lists.w3.org/Archives/Public/public-html-ig-ko/2011Sep/att-0031/Reflow_____________________________Tip.pdf
