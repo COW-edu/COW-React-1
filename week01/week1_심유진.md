@@ -52,7 +52,8 @@ Ex). 웹 페이지를 표현하는 과정 단순화
 
 ### 1-2. **CRP 단계**
 
-![Untitled](%E1%84%87%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%8C%E1%85%A5%E1%84%8B%E1%85%AA%20CRP%206bc35850a3ca4615b566da3997ba90ba/Untitled.png)
+<img width="737" alt="스크린샷 2023-07-11 오후 6 49 17" src="https://github.com/COW-edu/COW-React-1/assets/98771235/720d3289-8de9-43b8-9be3-0897adb240d8">
+
 
 1. HTML 데이터를 통해 DOM 트리를 빌드합니다.
     - **Parse HTML**
