@@ -277,7 +277,8 @@ var expression = function hoisting() {
     - 변경 사항이 실시간으로 반영됨
     - 실행 컨텍스트를 생성할 때, **variableEnvironment에 정보를 먼저 담은 다음, 이를 그대로 복사해서 Lexical environment를 만들고, 이후에는 Lexical environment를 주로 활용**한다.
 
-![Untitled](%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC%20%E1%84%8F%E1%85%A5%E1%86%AB%E1%84%90%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%205996404cd1034444b7d412c3b6ca956c/Untitled.png)
+![Untitled (2)](https://github.com/COW-edu/COW-React-1/assets/98771235/4d60d271-88a8-4bc1-b1b5-1fb68dbb0c29)
+
 
 ---
 
