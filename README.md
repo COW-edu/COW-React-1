@@ -17,9 +17,6 @@
     <td  align="center">
       <img  src="https://avatars.githubusercontent.com/u/127816010?v=4"  width="100px;"  alt=""/>
     </td>
-    <td  align="center">
-      <img  src="https://avatars.githubusercontent.com/u/128283286?v=4"  width="100px;"  alt=""/>
-    </td>
   </tr>
   <tr>
     <td align="center">
@@ -40,11 +37,6 @@
     <td align="center">
         <a href="https://github.com/swgvenghy">
             <div>준호</div>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/noweahct">
-            <div>채원</div>
         </a>
     </td>
   </tr>
