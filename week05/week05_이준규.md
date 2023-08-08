@@ -2,11 +2,7 @@
 
 State(상태)는 계속해서 변화하는 동적인 값, 상태에 따라 각각 다른 동작을 한다. 이를 우리가 사용할 React에 빗대어 설명해보자면, Component는 계속 바뀌는 동적인 데이터를 갖고, 상태를 바꾸는 등의 관리는 각 Component가 직접 관리하게 된다. 사용자와의 상호작용을 통해 화면을 동적으로 바꿔주기 위해 `useState`함수를 사용한다.
 
----
-
-<br>
-
-## 2. State 실습
+### State 실습
 
 React에서 State에 대해 실습할 때 가장 많이 사용하는 것이 Counter이다. Counter는 +버튼을 누르면 값이 증가하고, -버튼을 누르면 값이 감소하는 기능을 하는 Component이다.
 
@@ -30,17 +26,13 @@ App.js에서 Header와 Counter를 import 후 실행을 하면 아래와 같다.
 
 <br>
 
-## 3. Props
+## 2. Props
 
 지난 State 실습에서 진행한 Counter에서 초기값을 0이 아니라 지정하고 싶으면 어떻게 해야할까?
 
 이때 Props 개념을 사용한다. Props란 Properties의 줄임말로, 부모 Component에서 자식 Component에 값을 전달할 때 사용한다. 사용법은 문자열을 전달할 때는 "", 값을 전달할 때는 {}를 사용한다. 실제로 데이터를 전달해보며 Props 사용법을 익혀보려고 한다.
 
----
-
-<br>
-
-## 4. Props 데이터 전달
+### Props 데이터 전달
 
 ![](https://velog.velcdn.com/images/junnkyuu/post/909d57a7-7c0d-42a8-8db0-f313d40dcd93/image.png)
 
@@ -79,3 +71,22 @@ undefined값이 counter의 초기값이 되었기 때문에 이 상태에서 버
 ---
 
 <br>
+
+## 3. Props Drilling
+
+위의 Counter 실습처럼 React에서 데이터는 보통 상위 Component -> 하위 Component 방향으로 전달된다. 계층이 적으면 괜찮겠지만, 프로젝트를 진행하다 보면 많은 계층을 통해 props를 전달하게 될 수 있고, 이렇게 되면 코드가 복잡해지고 유지보수가 힘들어진다. 이런 문제를 보통 Props Drilling이라고 한다.
+
+![](https://velog.velcdn.com/images/junnkyuu/post/01114b98-9411-47c7-a2dd-9031c1083715/image.png)
+
+코드가 복잡해지는 경우를 예로 들면 상위 Component의 데이터를 여러 계층 밑에 있는 하위 Component에 전달해야하는 경우가 있다. 이때 여러 계층을 통과하면서 중간에 있는 Component들은 상위 Component에서 가져오는 데이터를 사용하지않고 전달만 하므로 코드가 복잡해진다.
+
+코드가 복잡해지고, 유지보수가 힘들어진다는 점이 있기 때문에 Props Drilling을 방지하기 위해 미리 생각하며 코드를 작성하는게 중요하다. Props Drilling을 방지하기 위해서 Component와 관련된 State는 가까이 유지하고, Children을 이용하고, 상태관리 라이브러리를 사용하는등의 방법들을 사용하여 Props Drilling을 최소화하고 코드의 가독성과 유지보수성을 높이는게 좋다.
+
+---
+
+<br>
+
+### 참고 및 출처
+
+- [인프런 소플-React 강의](https://www.inflearn.com/course/%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8)
+- [블로그](https://velog.io/@abc2752/propsdrilling)
