@@ -139,5 +139,3 @@ export default App;
 
 - 초기 렌더링시 ‘현재 count는 0입니다.’
 - 이후 count가 변경될 때마다 count를 1씩 증가시키며 콘솔에 증가한 카운트를 표현하는 로그 실행되는 걸 확인가능하다.
-
-![Untitled](%5B6%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%5D%20React%20hook%20(%E1%84%80%E1%85%B5%E1%84%8E%E1%85%A9)%20useState,%20useEffect%204830e3bf046f4a9bab5fdaa1147f0a9b/Untitled.png)
