@@ -49,7 +49,7 @@ function App() {
   ];
 
   const nextId = useRef(4);
-  const onCreate = () => {
+  const onCreate = () =>  {
 
 // 배열에 새로운 항복 추가하는 로직 생략
 
