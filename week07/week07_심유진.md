@@ -33,8 +33,8 @@ function App() {
   const users = [
     {
       id: 1,
-      username: 'subin',
-      email: 'subin@example.com'
+      username: 'yujin',
+      email: 'yujin@example.com'
     },
     {
       id: 2,
