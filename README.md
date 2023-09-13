@@ -8,9 +8,7 @@
     <td  align="center">
       <img  src="https://avatars.githubusercontent.com/u/98771235?v=4"  width="100px;"  alt=""/>
     </td>
-    <td  align="center">
-      <img  src="https://avatars.githubusercontent.com/u/98217364?v=4"  width="100px;"  alt=""/>
-    </td>
+
     <td  align="center">
       <img  src="https://avatars.githubusercontent.com/u/112809788?v=4"  width="100px;"  alt=""/>
     </td>
