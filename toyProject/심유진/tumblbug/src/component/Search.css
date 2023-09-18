@@ -1,0 +1,48 @@
+.SearchWrapper2 {
+    height: 65px;
+    width: 1032px;
+    margin: 0px auto;
+    padding: 0px 0px 0px 1rem;
+    position: relative;
+    left: auto;
+    border-bottom: none;
+    display: flex;
+   
+    border-bottom: 1px;
+}
+
+input:focus {outline: none;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+
+
+
+.Search2 {
+    flex-grow: 2;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+    display: flex;
+    border: 0px;
+    font-size: 17px;
+}
+
+.SearchButton2 {
+    margin-right: 20px;
+    margin-top: 16px;
+    
+}
+
+.SearchX {
+    border: 0px;
+    background-color: white;
+    font-size: 25px;
+    
+    
+}
