@@ -1,0 +1,90 @@
+.FormWrapper {
+    padding: 32px;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    
+    width: 400px;
+    padding: 0px 0px;
+    margin: 50px auto 12px;
+    top: 50%;
+    left: 50%;
+    
+
+}
+
+[class$="-input"]{
+   
+
+    border: 1px solid rgb(230, 230, 230);
+    color: rgb(13, 13, 13);
+    background: rgb(255, 255, 255);
+    padding: 0px 12px;
+    height: 50px;
+    width: 300px;
+    
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    -webkit-box-align: center;
+    align-items: center;
+   
+
+
+}
+
+.A1-check {
+    font-size: 20px;
+    font-weight: bold;
+    color: black !important;
+
+}
+[class$="-check"] {
+    margin-left: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 0px 0px 29px;
+    color: rgb(61, 61, 61);
+    display: inline-flex;
+}
+
+.Form {
+
+    padding: 32px;
+    border-radius: 5px;
+    
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    margin: 6px 0px 10px;
+}
+.XButton {
+    border: 0px;
+    background-color: white;
+    margin-left: 300px;
+}
+
+.GButton{
+    width: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 52px;
+    white-space: nowrap;
+    border-radius: 1px;
+    margin: 0px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0px 24px;
+    background-color: rgb(248, 100, 83);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}

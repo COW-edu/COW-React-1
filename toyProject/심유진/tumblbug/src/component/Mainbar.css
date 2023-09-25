@@ -1,0 +1,173 @@
+@media only screen and (min-width: 1100px){
+.App-container {
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 48em;
+}
+.mainbar-container {
+    width: 170px;
+    
+    
+    padding: 0px 8px 0px 8px;
+}
+
+.mainbar-img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.mainbar {
+    width: 25%;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+  
+}
+
+.mainbar-text {
+    color: rgb(109, 109, 109);
+    font-size: 11px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.mainbar-title {
+    font-weight: bold;;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+.mainbar-sponsorship_rate {
+    line-height: 28px;
+    font-size: 13px;
+    color: rgb(255, 87, 87);
+    font-weight: bold;
+    align-items: center;
+    display: inline-flex;
+
+}
+.titleaa {
+    display: block;
+    
+    margin-top: -100px;
+    margin: 30px;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.025em;
+    color: rgb(28, 28, 28);
+    font-weight: bold;
+    margin: 0px 0px 20px;
+    padding-left: 10px;
+}
+
+
+
+.mainbar-img { 
+    transform: scale(1.0); 
+    transition: transform .5s; 
+}
+ 
+.mainbar-img:hover {    
+    transform: scale(1.05);   
+    transition: transform .5s;  
+}
+
+}
+
+@media only screen and (max-width: 1100px){
+    .App-container {
+       
+        overflow: hidden;
+        display: flex;
+        
+       
+        
+       
+    }
+    .mainbar-container {
+        width: auto;
+        
+        
+        padding: 0px 18px 0px 18px;
+    }
+    
+    .mainbar-img {
+        max-width: 100%;
+        cursor: pointer;
+    }
+    
+    .mainbar {
+        width: 25%;
+        padding: 0px 20px;
+        padding-bottom: 40px;
+      
+    }
+    
+    .mainbar-text {
+        color: rgb(109, 109, 109);
+        font-size: 11px;
+        cursor: pointer;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    
+    .mainbar-title {
+        font-weight: bold;;
+        color: rgb(61, 61, 61);
+        cursor: pointer;
+        font-size: 14px;
+        word-break: keep-all;
+    }
+    
+    .mainbar-sponsorship_rate {
+        line-height: 28px;
+        font-size: 13px;
+        color: rgb(255, 87, 87);
+        font-weight: bold;
+        align-items: center;
+        display: inline-flex;
+    
+    }
+    .titleaa {
+        display: block;
+        min-width: 200px;
+    
+        margin: 30px;
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: -0.025em;
+        color: rgb(28, 28, 28);
+        font-weight: bold;
+        margin: 0px 0px 20px;
+        padding-left: 10px;
+    }
+    
+    
+    
+    .mainbar-img { 
+        transform: scale(1.0); 
+        transition: transform .5s; 
+    }
+     
+    .mainbar-img:hover {    
+        transform: scale(1.05);   
+        transition: transform .5s;  
+    }
+    
+    }
+
+.mainbar-category:hover {
+    text-decoration: underline;
+}
+
+.mainbar-creator:hover {
+    text-decoration: underline;
+}
+
+.SearchIcon {
+    cursor: pointer;
+}
